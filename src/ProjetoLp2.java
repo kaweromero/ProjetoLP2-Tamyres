@@ -6,7 +6,10 @@ import java.util.Scanner;
 public class ProjetoLp2 extends TelaInicialLogin {
     	    
 	
-	public static HashMap <String,Conta> Dados = new HashMap <String,Conta>();
+	public static HashMap <String,Conta> Dados = new HashMap <String,Conta>();//Hashmap de contas de usuários (nome do usuario / conta)
+	public static HashMap <String,Imovel> DadosImoveis = new HashMap <String,Imovel>();//Hashmap de imoveis pra vender (nome do proprietario / info dos imoveis)
+	public static HashMap <String,ImovelAluguel> DadosAlugados = new HashMap <String,ImovelAluguel>();//Hashmap de imoveis pra alugar (nome do proprietario/ info dos imoveis)
+	
     	    
     	 public static void main(String[] args) {
     	        

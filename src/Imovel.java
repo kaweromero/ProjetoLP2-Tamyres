@@ -10,6 +10,7 @@ public class Imovel {
     protected int numQuartos;
     protected int garagem;
     protected String ap = "apartamento";
+    protected long preco; 
     
     Scanner in = new Scanner(System.in);
     
@@ -30,8 +31,90 @@ public class Imovel {
         numQuartos = in.nextInt();
         System.out.println("5. Quantidades de vagas na garagem: ");
         garagem = in.nextInt();
+        System.out.println("5. Qual o preço do Imóvel: ");
+        preco = in.nextInt();
+        
+    	//Volta para o menu principal
+		ExibeMenu menu = new ExibeMenu();
+		menu.escolheOpcao();
          
     }
+
+	public String getProprietario() {
+		return proprietario;
+	}
+
+	public void setProprietario(String proprietario) {
+		this.proprietario = proprietario;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public int getAndar() {
+		return andar;
+	}
+
+	public void setAndar(int andar) {
+		this.andar = andar;
+	}
+
+	public double getArea() {
+		return area;
+	}
+
+	public void setArea(double area) {
+		this.area = area;
+	}
+
+	public int getNumQuartos() {
+		return numQuartos;
+	}
+
+	public void setNumQuartos(int numQuartos) {
+		this.numQuartos = numQuartos;
+	}
+
+	public int getGaragem() {
+		return garagem;
+	}
+
+	public void setGaragem(int garagem) {
+		this.garagem = garagem;
+	}
+
+	public String getAp() {
+		return ap;
+	}
+
+	public void setAp(String ap) {
+		this.ap = ap;
+	}
+
+	public long getPreco() {
+		return preco;
+	}
+
+	public void setPreco(long preco) {
+		this.preco = preco;
+	}
+
+	public Scanner getIn() {
+		return in;
+	}
+
+	public void setIn(Scanner in) {
+		this.in = in;
+	}
+    
+    
+    
+    
     
     
 }
