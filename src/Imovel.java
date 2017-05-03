@@ -111,7 +111,13 @@ public class Imovel {
 	public void setIn(Scanner in) {
 		this.in = in;
 	}
-    
+    public void mostrarImovel(){
+    	
+    	System.out.println("Informações do Imovel encontrado: "+"Proprietário:"+proprietario+" Tipo do Imovel: "
+    	+tipo+" Area: "+area+" Número de quartos: "+numQuartos+" Vagas da garagem "+garagem+" Preço: R$ "+preco);
+    	
+    	
+    }
     
     
     

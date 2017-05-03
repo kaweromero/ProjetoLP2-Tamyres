@@ -25,14 +25,18 @@ public class ExibeMenu {
 		opcao = in.nextInt();
 		switch (opcao) {
 		case 1:
-			//Depoissss
+			
+			//Vai pra o menu de opções de compra (Na classe ComprarImovel)
+			ComprarImovel compraImv = new ComprarImovel();
+			compraImv.opcoesDeCompra();
+				
 			break;
 		case 2:
 			//Cria um novo imovel e joga na tela as opções de venda
 			Imovel novoImovel = new Imovel();
 			novoImovel.dadosImovel();
 			//Cadastra na venda de imoveis
-			ProjetoLp2.DadosImoveis.put(novoImovel.getProprietario(), novoImovel);
+			ProjetoLp2.DadosImoveis.add(novoImovel);
 			break;
 			
 		case 3:
@@ -40,7 +44,7 @@ public class ExibeMenu {
 			ImovelAluguel novoImovelAluguel = new ImovelAluguel();
 			novoImovelAluguel.dadosImovel(true);
 			//Insere o novo imovel na tabela de imoveis alugados yay
-			ProjetoLp2.DadosAlugados.put(novoImovelAluguel.getProprietario(), novoImovelAluguel);
+			ProjetoLp2.DadosAlugados.add(novoImovelAluguel);
 			break;
 		case 4:
 			
