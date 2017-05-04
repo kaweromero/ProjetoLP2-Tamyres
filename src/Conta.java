@@ -38,6 +38,14 @@ public class Conta {
     public String getNome(){
     	return nome;
     }
+
+	public ArrayList<Imovel> getListaImoveis() {
+		return listaImoveis;
+	}
+
+	public void addImovel(Imovel imovel) {
+		this.listaImoveis.add(imovel);
+	}
     
     
 }

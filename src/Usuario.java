@@ -27,19 +27,19 @@ public class Usuario extends TelaInicialLogin {
              }
     }
     
-    public static String getLogin1() {
+    public static String getLogin() {
 		return login1;
 	}
 
-	public static void setLogin1(String login1) {
+	public static void setLogin(String login1) {
 		Usuario.login1 = login1;
 	}
 
-	public static String getSenha1() {
+	public static String getSenha() {
 		return senha1;
 	}
 
-	public static void setSenha1(String senha1) {
+	public static void setSenha(String senha1) {
 		Usuario.senha1 = senha1;
 	}
 

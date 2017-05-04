@@ -35,8 +35,7 @@ public class Imovel {
         preco = in.nextInt();
         
     	//Volta para o menu principal
-		ExibeMenu menu = new ExibeMenu();
-		menu.escolheOpcao();
+		
          
     }
 
@@ -113,8 +112,8 @@ public class Imovel {
 	}
     public void mostrarImovel(){
     	
-    	System.out.println("Informações do Imovel encontrado: "+"Proprietário:"+proprietario+" Tipo do Imovel: "
-    	+tipo+" Area: "+area+" Número de quartos: "+numQuartos+" Vagas da garagem "+garagem+" Preço: R$ "+preco);
+    	System.out.println("--- Informações do Imovel encontrado: "+"Proprietário :"+proprietario+" / Tipo do Imovel: "
+    	+tipo+" / Area: "+area+" / Número de quartos: "+numQuartos+" / Vagas da garagem "+garagem+" / Preço: R$ "+preco);
     	
     	
     }

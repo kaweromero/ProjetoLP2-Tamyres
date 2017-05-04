@@ -37,7 +37,10 @@ public class TelaInicialLogin {
 		case 2:
 			System.out.println("---------- CRIAR CONTA ----------");
 			System.out.println("1. Informe o nome: ");
-			nome = in.next();
+			
+			nome = in.nextLine();
+			nome = in.nextLine();
+			
 			System.out.println("2. Informe a data de nascimento: ");
 			data = in.next();
 			System.out.println("3. Informe a idade: ");
@@ -52,17 +55,21 @@ public class TelaInicialLogin {
 				System.out.println("6. Informe a senha: ");
 				senha = in.next();
 
+				
+				Conta cadastro = new Conta(nome, data, idade, cpf, login, senha);
+				Usuario.login1 = cadastro.getLogin();
+				Usuario.senha1 = cadastro.getSenha();
+				Usuario.setNome(nome);
+
+				
+				ProjetoLp2.Dados.put(cadastro.getLogin(), cadastro);
+				// Joga pra tela de Opçoes principais
+				ExibeMenu menu = new ExibeMenu();
+				menu.escolheOpcao();
 			}
-
+			
 		}
-		Conta cadastro = new Conta(nome, data, idade, cpf, login, senha);
-		Usuario.login1 = cadastro.getNome();
-		Usuario.senha1 = cadastro.getSenha();
-		Usuario.setNome(nome);
-
-		// Joga pra tela de Opçoes principais
-		ExibeMenu menu = new ExibeMenu();
-		menu.escolheOpcao();
+		
 
 		
 		

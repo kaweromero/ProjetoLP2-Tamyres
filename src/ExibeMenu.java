@@ -37,6 +37,8 @@ public class ExibeMenu {
 			novoImovel.dadosImovel();
 			//Cadastra na venda de imoveis
 			ProjetoLp2.DadosImoveis.add(novoImovel);
+			escolheOpcao();
+			
 			break;
 			
 		case 3:

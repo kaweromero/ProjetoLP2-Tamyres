@@ -42,7 +42,7 @@ public class ImovelAluguel {
 		numQuartos = in.nextInt();
 		System.out.println("5. Quantidades de vagas na garagem: ");
 		garagem = in.nextInt();
-		System.out.println("5. Qual o preço do Alguel: ");
+		System.out.println("5. Qual o preço do Aluguel: ");
 		preco = in.nextInt();
 		
 		//Volta para o menu principal
