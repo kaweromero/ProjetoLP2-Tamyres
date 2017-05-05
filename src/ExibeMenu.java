@@ -47,12 +47,14 @@ public class ExibeMenu {
 			novoImovelAluguel.dadosImovel(true);
 			//Insere o novo imovel na tabela de imoveis alugados yay
 			ProjetoLp2.DadosAlugados.add(novoImovelAluguel);
-			break;
+			
+		     break;
 		case 4:
 			
 			ImovelAluguel novoImovelAluguel2 = new ImovelAluguel();
 			novoImovelAluguel2.dadosImovel(false);
 			break;
+			
 		case 5:
 			
 			//HistoricoDeOperacoes();

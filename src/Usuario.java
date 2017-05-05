@@ -27,8 +27,8 @@ public class Usuario extends TelaInicialLogin {
              }
     }
     
-    public static String getLogin() {
-		return login1;
+    public static int getLogin() {
+		return login;
 	}
 
 	public static void setLogin(String login1) {

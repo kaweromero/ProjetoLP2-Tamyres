@@ -25,7 +25,7 @@ public class ComprarImovel {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Digite a opção desejada: ");
 
-		opcao = in.nextInt();
+		opcao = in.nextInt(); 
 		switch (opcao) {
 		case 1:
 			buscarPorPreco();
