@@ -34,7 +34,7 @@ public class Imovel {
         System.out.println("5. Qual o preço do Imóvel: ");
         preco = in.nextInt();
         
-    	//Volta para o menu principal
+       
 		
          
     }

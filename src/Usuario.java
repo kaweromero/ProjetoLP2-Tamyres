@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Usuario extends TelaInicialLogin {
     
-    public static String login1;
+    public static String login;
     public static String senha1;
     public static String nome;
     
@@ -13,11 +13,11 @@ public class Usuario extends TelaInicialLogin {
     
     public void user(){
         System.out.println("\nLogin: ");
-        login1 = in.next();
+        login = in.next();
         System.out.println("Senha: ");
         senha1 = in.next();
         
-             if(login1.equals(login)){
+             if(login.equals(login)){
                  //TelaDeApresentacao t = new TelaDeApresentacao();
                 // t.opcoes();
              }else{
@@ -27,12 +27,12 @@ public class Usuario extends TelaInicialLogin {
              }
     }
     
-    public static int getLogin() {
+    public static String getLogin() {
 		return login;
 	}
 
 	public static void setLogin(String login1) {
-		Usuario.login1 = login1;
+		Usuario.login = login1;
 	}
 
 	public static String getSenha() {

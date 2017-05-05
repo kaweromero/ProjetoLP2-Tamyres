@@ -81,6 +81,17 @@ public class ComprarImovel {
 
 				//Adiciona o imovel na sua conta
 				ProjetoLp2.Dados.get(Usuario.getLogin()).addImovel(ProjetoLp2.DadosImoveis.get(cod));
+				
+				//Cria um histórico
+				Historico historico = new Historico();
+				historico.dataAgora();
+				historico.setLogin(Usuario.getLogin());
+				
+				//O método "ProjetoLp2.DadosAlugados.get(cod)" pega o imovel do arraylist pelo COD e adiciona no historico
+				historico.setImovelComprou(ProjetoLp2.DadosImoveis.get(cod));//Aqui é no DadosImoveis
+				
+				//ADICIONA O HISTORICO
+				ProjetoLp2.Dados.get(Usuario.getLogin()).addHistorico(historico);
 
 				// Remove da lista de imoveis a venda
 				ProjetoLp2.DadosImoveis.remove(cod);
@@ -151,6 +162,7 @@ public class ComprarImovel {
 
 				if (ProjetoLp2.DadosImoveis.get(index).getNumQuartos() == valorQuartos) {
 
+					System.out.print("Código Imóvel: " + index);
 					ProjetoLp2.DadosImoveis.get(index).mostrarImovel();
 				}
 
@@ -178,6 +190,7 @@ public class ComprarImovel {
 
 				if (ProjetoLp2.DadosImoveis.get(index).getArea() <= valorArea) {
 
+					System.out.print("Código Imóvel: " + index);
 					ProjetoLp2.DadosImoveis.get(index).mostrarImovel();
 				}
 
@@ -207,6 +220,7 @@ public class ComprarImovel {
 
 				if (ProjetoLp2.DadosImoveis.get(index).getTipo().equals(tipo)) {
 
+					System.out.print("Código Imóvel: " + index);
 					ProjetoLp2.DadosImoveis.get(index).mostrarImovel();
 				}
 
@@ -236,6 +250,7 @@ public class ComprarImovel {
 
 				if (ProjetoLp2.DadosImoveis.get(index).getGaragem() == valorGaragem) {
 
+					System.out.print("Código Imóvel: " + index);
 					ProjetoLp2.DadosImoveis.get(index).mostrarImovel();
 				}
 

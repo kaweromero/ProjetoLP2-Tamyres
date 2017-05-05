@@ -52,7 +52,7 @@ public class TelaInicialLogin {
 
 				
 				Conta cadastro = new Conta(nome, data, idade, cpf, login, senha);
-				Usuario.login1 = cadastro.getLogin();
+				Usuario.login = cadastro.getLogin();
 				Usuario.senha1 = cadastro.getSenha();
 				Usuario.setNome(nome);
 
