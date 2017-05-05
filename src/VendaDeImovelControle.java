@@ -4,7 +4,7 @@ import java.util.Map;
 
 
 public class VendaDeImovelControle {
-    //private HashMap <String, Produto> itensAVenda;
+   
     HashMap <String, Conta> Dados;
     
     public VendaDeImovelControle() {

@@ -18,8 +18,8 @@ public class Historico {
 		this.data1 = formata.format(agora);
 		formata = new SimpleDateFormat(this.hora);
 		this.hora1 = formata.format(agora);
-		// System.out.print(data1+" ");
-		// System.out.print(hora1+" ");
+	    System.out.print(data1+" ");
+	    System.out.print(hora1+" ");
 
 	}
 

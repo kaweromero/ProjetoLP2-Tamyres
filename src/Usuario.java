@@ -18,8 +18,9 @@ public class Usuario extends TelaInicialLogin {
         senha1 = in.next();
         
              if(login.equals(login)){
-                 //TelaDeApresentacao t = new TelaDeApresentacao();
-                // t.opcoes();
+               
+            	   ExibeMenu t = new ExibeMenu();
+            	   t.escolheOpcao();
              }else{
                  System.out.println("Esta conta ainda não foi criada!");
                  TelaInicialLogin i = new TelaInicialLogin();
