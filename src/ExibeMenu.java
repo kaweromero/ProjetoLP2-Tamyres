@@ -13,7 +13,7 @@ public class ExibeMenu {
 
 		// Menus pra escolher
 		System.out.println("1. Adquirir Imovel");// DONE!
-		System.out.println("2. Vender Imóvel");// DONE!
+		System.out.println("2. Vender Imóvel" );// DONE!
 		System.out.println("3. Colocar um imóvel para alugar");//DONE!
 		System.out.println("4. Alugar um imóvel");// DONE!
 		System.out.println("5. Histórico de Operações");// DONE!

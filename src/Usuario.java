@@ -17,7 +17,11 @@ public class Usuario extends TelaInicialLogin {
         System.out.println("Senha: ");
         senha1 = in.next();
         
-             if(login.equals(login)){
+        
+        
+        if(ProjetoLp2.Dados.get(Usuario.getLogin()).equals(login)){
+             //if(login.equals(login)){
+            	 
                
             	   ExibeMenu t = new ExibeMenu();
             	   t.escolheOpcao();
