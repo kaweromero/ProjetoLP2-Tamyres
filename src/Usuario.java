@@ -18,11 +18,18 @@ public class Usuario extends TelaInicialLogin {
         senha1 = in.next();
         
         
+      
+        //Antes estava assim
+        //if(ProjetoLp2.Dados.get(Usuario.getLogin()).equals(login)){
+        //Só que o "get" do ArrayList "Dados" devolve o objeto "Conta", a gente tava comparando Conta com login
+        //O que fiz foi agora pegar o login da "Conta, colocando um getLogin()
+        //ProjetoLp2.Dados.get(Usuario.getLogin()) *** Pega a Conta
+        //ProjetoLp2.Dados.get(Usuario.getLogin()).getLogin() *** Pega a conta e pega o Login da conta xDDD
         
-        if(ProjetoLp2.Dados.get(Usuario.getLogin()).equals(login)){
+        if(ProjetoLp2.Dados.get(Usuario.getLogin()).getLogin().equals(login)){
              //if(login.equals(login)){
             	 
-               
+               System.out.println("Funfou!");
             	   ExibeMenu t = new ExibeMenu();
             	   t.escolheOpcao();
              }else{

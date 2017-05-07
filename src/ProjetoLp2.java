@@ -14,8 +14,11 @@ public class ProjetoLp2 extends TelaInicialLogin {
 	
     	    
     	 public static void main(String[] args) {
-    			
-    	        
+    		
+    		 //Aqui cria uma conta normal, só para iniciar o programa com algo e pode testar o login
+    	     Conta conta = new Conta("Lorem Ipsum","12346",25,1324165,"loremipsum","12346");
+    		 Dados.put("loremipsum", conta);
+    		 
     	     TelaInicialLogin tel = new TelaInicialLogin();
     	    
     	     
